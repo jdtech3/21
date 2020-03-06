@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.login.LoginActivity">
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#c4c2c7"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questButton"
+        tools:text="Email" />
+
+    <Button
+        android:id="@+id/storeButton"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#c4c2c7"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toStartOf="@+id/emailButton"
+        app:layout_constraintTop_toTopOf="@+id/questButton"
+        tools:text="Store" />
+
+    <Button
+        android:id="@+id/questButton"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#c4c2c7"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toStartOf="@+id/storeButton"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/statusButton"
+        app:layout_constraintTop_toBottomOf="@+id/bar"
+        tools:text="Quest" />
+
+    <View
+        android:id="topBar"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="411dp"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="#17C7FF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageView
+        android:id="@+id/21Logo"
+        android:layout_width="49dp"
+        android:layout_height="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bar"
+        app:srcCompat="@drawable/black21"
+        tools:layout_editor_absoluteY="13dp" />
+
+    <TextView
+        android:id="@+id/homeButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#c4c2c7"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questButton"
+        tools:text="Home" />
+
+    <View
+        android:id="@+id/activityBar"
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:background="#17C7FF"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/statusButton"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#c4c2c7"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/questButton"
+        tools:text="Status" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
