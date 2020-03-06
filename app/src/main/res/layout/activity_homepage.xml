@@ -9,7 +9,7 @@
 
     tools:context=".ui.login.LoginActivity">
 
-    <TextView
+    <Button
         android:id="@+id/group_4"
         android:layout_width="80dp"
         android:layout_height="40dp"
@@ -25,7 +25,7 @@
         tools:layout_editor_absoluteY="57dp"
         tools:text="Email" />
 
-    <TextView
+    <Button
         android:id="@+id/group_3"
         android:layout_width="80dp"
         android:layout_height="40dp"
@@ -41,7 +41,7 @@
         tools:layout_editor_absoluteY="57dp"
         tools:text="Store" />
 
-    <TextView
+    <Button
         android:id="@+id/group_2"
         android:layout_width="80dp"
         android:layout_height="40dp"
@@ -84,7 +84,7 @@
         tools:layout_editor_absoluteY="13dp" />
 
     <TextView
-        android:id="@+id/group_15"
+        android:id="@+id/group_6"
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
@@ -109,8 +109,8 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="93dp" />
 
-    <TextView
-        android:id="@+id/group_"
+    <Button
+        android:id="@+id/group_1"
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
