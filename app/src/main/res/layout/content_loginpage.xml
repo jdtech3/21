@@ -12,14 +12,18 @@
         android:id="@+id/button"
         android:layout_width="251dp"
         android:layout_height="47dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTintMode="src_in"
         android:clipToOutline="true"
+<<<<<<< HEAD
         android:drawableStart="@drawable/goa_googlelogo"
+=======
+        android:drawableLeft="@drawable/logogoogle"
+>>>>>>> ca931d958d745c78b10bf2f9ae34a1d7b6d9079a
         android:text="Continue with Google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
