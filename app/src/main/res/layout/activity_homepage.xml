@@ -10,11 +10,11 @@
 
     <Button
         android:id="@+id/emailButton"
-        android:layout_width="80dp"
+        android:layout_width="76dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#c4c2c7"
+        android:background="#FFFFFF"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="TextView"
@@ -26,11 +26,12 @@
 
     <Button
         android:id="@+id/storeButton"
-        android:layout_width="83dp"
+        android:layout_width="76dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#c4c2c7"
+        android:layout_marginEnd="8dp"
+        android:background="#FFFFFF"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="TextView"
@@ -42,11 +43,11 @@
 
     <Button
         android:id="@+id/questButton"
-        android:layout_width="86dp"
+        android:layout_width="76dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#c4c2c7"
+        android:background="#FFFFFF"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="TextView"
@@ -88,11 +89,11 @@
 
     <TextView
         android:id="@+id/homeButton"
-        android:layout_width="80dp"
+        android:layout_width="76dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#c4c2c7"
+        android:background="#FFFFFF"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="TextView"
@@ -104,7 +105,7 @@
 
     <View
         android:id="@+id/activityBar"
-        android:layout_width="80dp"
+        android:layout_width="76dp"
         android:layout_height="4dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -115,11 +116,12 @@
 
     <Button
         android:id="@+id/statusButton"
-        android:layout_width="83dp"
+        android:layout_width="76dp"
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#c4c2c7"
+        android:layout_marginStart="8dp"
+        android:background="#FFFFFF"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="TextView"
