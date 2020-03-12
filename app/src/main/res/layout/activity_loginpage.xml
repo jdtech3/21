@@ -6,11 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".loginpage">
 
+<<<<<<< HEAD
 
     <include
         android:id="@+id/include"
         layout="@layout/content_loginpage"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center" />
+=======
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/content_loginpage" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+>>>>>>> 057f54212bebbc912180f1fbcf836e6bc3ae738f
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
