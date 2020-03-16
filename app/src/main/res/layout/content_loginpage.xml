@@ -19,11 +19,6 @@
         android:background="@drawable/rounded_corners"
         android:backgroundTintMode="src_in"
         android:clipToOutline="true"
-<<<<<<< HEAD
-        android:drawableStart="@drawable/goa_googlelogo"
-=======
-        android:drawableLeft="@drawable/logogoogle"
->>>>>>> ca931d958d745c78b10bf2f9ae34a1d7b6d9079a
         android:text="Continue with Google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,12 +28,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="116dp"
+        android:layout_width="95dp"
         android:layout_height="87dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="250dp"
         android:contentDescription="White 21 logo."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
