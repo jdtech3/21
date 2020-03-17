@@ -10,6 +10,7 @@
 
 
     <Button
+        style="?android:attr/borderlessButtonStyle"
         android:id="@+id/button"
         android:layout_width="251dp"
         android:layout_height="47dp"
