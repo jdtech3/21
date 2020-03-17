@@ -8,43 +8,32 @@
     android:background="@drawable/gradient1">
 
 
-
-    <Button
-        style="?android:attr/borderlessButtonStyle"
-        android:id="@+id/button"
-        android:layout_width="251dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/rounded_corners"
-        android:text="Continue with Google"
+    <ImageButton
+        android:id="@+id/continue_with_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532"
-        android:drawableStart="@drawable/goa_googlelogo"
-        android:paddingLeft="10dp"
-        />
-
+        app:srcCompat="@drawable/continue_with_google" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="95dp"
-        android:layout_height="87dp"
+        android:id="@+id/logo_21"
+        android:layout_width="130dp"
+        android:layout_height="108dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="190dp"
         android:contentDescription="White 21 logo."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logowhite"
-        />
+        app:srcCompat="@drawable/logo_21" />
 
     <View
         android:id="@+id/view"
@@ -75,7 +64,8 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="285dp"
             android:layout_marginBottom="250dp"
-            android:background="@drawable/bookmark_color" />
+            android:background="@drawable/bookmark_color"
+            />
 
         <View
             android:id="@+id/triangle"
@@ -88,6 +78,7 @@
             android:background="@drawable/subtract"
 
             />
+
     </FrameLayout>
 
 
