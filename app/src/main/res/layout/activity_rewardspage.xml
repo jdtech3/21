@@ -38,7 +38,8 @@
         android:textSize="11dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/button5"
@@ -51,7 +52,8 @@
         android:textSize="11dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/button6"
@@ -64,7 +66,8 @@
         android:textSize="11dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -112,7 +115,8 @@
         android:textSize="11dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/button6" />
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView"
