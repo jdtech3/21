@@ -177,7 +177,7 @@
                 app:srcCompat="@drawable/bestbutt" />
 
             <ImageView
-                android:id="@+id/imageView13"
+                android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
