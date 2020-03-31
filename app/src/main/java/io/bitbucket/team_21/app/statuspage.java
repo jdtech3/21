@@ -1,6 +1,7 @@
 package io.bitbucket.team_21.app;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,4 +19,34 @@ import java.util.ArrayList;
 
 public class statuspage extends AppCompatActivity{
 
+    BarChart barChart;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_statuspage);
+
+        barChart = findViewById(R.id.chart1);
+
+        BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"DataSet 1");
+
+        BarData barData = new BarData();
+        barData.addDataSet(barDataSet1);
+
+        barChart.setData(barData);
+        barChart.invalidate();
+        System.out.println(dataValues1());
+
+    }
+
+    private ArrayList<BarEntry> dataValues1(){
+        ArrayList<BarEntry> dataVals = new ArrayList<>();
+        dataVals.add(new BarEntry(0,3));
+        dataVals.add(new BarEntry(1,4));
+        dataVals.add(new BarEntry(2,6));
+        dataVals.add(new BarEntry(3,10));
+        return dataVals;
+    }
+
 }
+
