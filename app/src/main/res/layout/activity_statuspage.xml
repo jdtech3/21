@@ -130,7 +130,7 @@
         app:cardCornerRadius="25dp"
         android:outlineAmbientShadowColor="#000000">
 
-        <com.github.mikephil.charting.charts.BarChart
+        <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/chart1"
             android:layout_width="371dp"
             android:layout_height="240dp"
