@@ -18,6 +18,9 @@ android {
         }
     }
 }
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -32,4 +35,5 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.2.1'
     implementation 'androidx.navigation:navigation-ui:2.2.1'
     implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
