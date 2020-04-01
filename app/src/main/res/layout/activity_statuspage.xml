@@ -130,11 +130,59 @@
         app:cardCornerRadius="25dp"
         android:outlineAmbientShadowColor="#000000">
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/assignment"
+            app:layout_constraintEnd_toEndOf="@+id/secondMark"
+            app:layout_constraintStart_toStartOf="@+id/secondMark"
+            app:layout_constraintTop_toTopOf="@+id/secondMark"
+            app:srcCompat="@drawable/halfroundbar" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#EAEAEA"
+            android:gravity="left|center"
+            >
+
+            <TextView
+                android:id="@+id/selectorbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:paddingLeft="15dp"
+                android:text="Term 1 ▾"
+                android:textSize="12dp"
+                />
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="monospace"
+            android:text="Assignments on time:"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintVertical_bias="0.562" />
+
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/chart1"
             android:layout_width="371dp"
             android:layout_height="218dp"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="50dp">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -150,6 +198,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondMark" >
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="371dp"
+            android:layout_height="51dp"
+            android:contentDescription="@string/assignment"
+            app:layout_constraintEnd_toEndOf="@+id/secondMark"
+            app:layout_constraintStart_toStartOf="@+id/secondMark"
+            app:layout_constraintTop_toTopOf="@+id/secondMark"
+            app:srcCompat="@drawable/halfroundbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="monospace"
+            android:text="Average Missed Assignments:"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintVertical_bias="0.562" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart2"
+            android:layout_width="371dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="50dp"/>
 
     </androidx.cardview.widget.CardView>
 
