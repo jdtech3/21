@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/assignment_icon"
-        android:text="@string/quest"
+        android:text="@string/quests"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -380,11 +380,11 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="50dp"
+        android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/reward_icon"
-        android:text="Reward"
+        android:text="@string/rewards"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

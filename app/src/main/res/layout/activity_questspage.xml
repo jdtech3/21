@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/assignment_icon"
-        android:text="@string/quest"
+        android:text="@string/quests"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +74,7 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="14dp"
-        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_21_logo_white" />
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Quests"
+        android:text="@string/quests"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,11 +104,11 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="50dp"
+        android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/reward_icon"
-        android:text="Reward"
+        android:text="@string/rewards"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,9 +127,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
     <androidx.cardview.widget.CardView
         android:id="@+id/imageView4"
         android:layout_width="361dp"
@@ -140,7 +137,6 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.081">
 
         <TextView
