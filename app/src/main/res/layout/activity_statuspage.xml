@@ -138,8 +138,7 @@
             app:layout_constraintEnd_toEndOf="@+id/secondMark"
             app:layout_constraintStart_toStartOf="@+id/secondMark"
             app:layout_constraintTop_toTopOf="@+id/secondMark"
-<<<<<<< HEAD
-            app:srcCompat="@drawable/halfroundbar" />
+            app:srcCompat="@drawable/half_rounded_bar_top" />
 
         <Button
             android:id="@+id/button2"
