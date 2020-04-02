@@ -184,15 +184,15 @@
             android:layout_gravity="right"
             android:layout_margin="15dp"
             android:backgroundTint="#648BFF"
-            app:cardCornerRadius="15dp" >
+            app:cardCornerRadius="15dp">
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="78dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="ICE CREAM"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#FFFFFF" />
         </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
