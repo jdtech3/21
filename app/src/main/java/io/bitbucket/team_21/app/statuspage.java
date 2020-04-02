@@ -11,6 +11,8 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 
 import java.lang.reflect.Array;
@@ -20,22 +22,27 @@ import java.util.ArrayList;
 public class statuspage extends AppCompatActivity{
 
     BarChart barChart;
-
+    LineChart lineChart;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statuspage);
 
+        lineChart = findViewById(R.id.chart2);
         barChart = findViewById(R.id.chart1);
 
         BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"DataSet 1");
+        LineDataSet lineDataSet = new LineDataSet(lineValues1(),"DataSet 1");
 
         BarData barData = new BarData();
         barData.addDataSet(barDataSet1);
+        LineData lineData = new LineData();
+        lineData.addDataSet(lineDataSet);
 
         barChart.setData(barData);
         barChart.invalidate();
-        System.out.println(dataValues1());
+        lineChart.setData(lineData);
+        lineChart.invalidate();
 
     }
 
@@ -46,6 +53,15 @@ public class statuspage extends AppCompatActivity{
         dataVals.add(new BarEntry(2,6));
         dataVals.add(new BarEntry(3,10));
         return dataVals;
+    }
+
+    private ArrayList<Entry> lineValues1(){
+        ArrayList<Entry> lineVals = new ArrayList<>();
+        lineVals.add(new Entry(0,3));
+        lineVals.add(new Entry(1,4));
+        lineVals.add(new Entry(2,6));
+        lineVals.add(new Entry(3,10));
+        return lineVals;
     }
 
 }

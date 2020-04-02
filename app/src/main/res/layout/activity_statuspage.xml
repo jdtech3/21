@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1C9DFF"
-    tools:context=".ui.login.LoginActivity">
+    >
 
     <ImageView
         android:id="@+id/imageView2"
@@ -151,18 +151,10 @@
             android:background="@drawable/rounded_corners"
             android:backgroundTint="#EAEAEA"
             android:gravity="left|center"
-            >
+            android:text="Term 1"
+            />
 
-            <TextView
-                android:id="@+id/selectorbutton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="monospace"
-                android:paddingLeft="15dp"
-                android:text="Term 1 ▾"
-                android:textSize="12dp"
-                />
-        </Button>
+
 
         <TextView
             android:layout_width="wrap_content"
