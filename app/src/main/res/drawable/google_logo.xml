@@ -3,10 +3,8 @@
 
     <item
         android:id="@+id/googlelogo"
-        android:drawable="@drawable/goa_googlelogo"
+        android:drawable="@drawable/google_logo_image"
         android:width="30dp"
-        android:height="30dp"
+        android:height="30dp" />
 
-        />
-
-</layer-list >
+</layer-list>
