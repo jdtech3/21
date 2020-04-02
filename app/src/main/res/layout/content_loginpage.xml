@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="@drawable/gradient1">
-
+    android:background="@drawable/blue_bg">
 
     <ImageButton
         android:id="@+id/continue_with_google"
@@ -18,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/continue_with_google" />
+        app:srcCompat="@drawable/continue_with_google_button" />
 
     <ImageView
         android:id="@+id/logo_21"
@@ -33,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_21" />
+        app:srcCompat="@drawable/_21_logo_default" />
 
     <View
         android:id="@+id/view"
@@ -63,7 +62,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="285dp"
             android:layout_marginBottom="250dp"
-            android:background="@drawable/bookmark_color"
+            android:background="@drawable/loginpage_bookmark_color"
             />
 
         <View
@@ -74,14 +73,8 @@
             android:layout_marginTop="45dp"
             android:layout_marginEnd="285dp"
             android:layout_marginBottom="250dp"
-            android:background="@drawable/subtract"
-
-            />
+            android:background="@drawable/loginpage_bookmark_subtract" />
 
     </FrameLayout>
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
