@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cutbamboo" />
+        app:srcCompat="@drawable/angled_orange" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -25,14 +25,14 @@
         android:layout_marginTop="372dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:srcCompat="@drawable/bot_bar" />
+        app:srcCompat="@drawable/bottom_bar" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:drawableTop="@drawable/assignment"
+        android:drawableTop="@drawable/assignment_icon"
         android:text="Quest"
         android:textColor="#6D6D6D"
         android:textSize="11dp"
@@ -46,7 +46,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:drawableTop="@drawable/status"
+        android:drawableTop="@drawable/status_icon"
         android:text="Status"
         android:textColor="#6D6D6D"
         android:textSize="11dp"
@@ -60,7 +60,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:drawableTop="@drawable/home"
+        android:drawableTop="@drawable/home_icon"
         android:text="Home"
         android:textColor="#6D6D6D"
         android:textSize="11dp"
@@ -105,7 +105,7 @@
             android:layout_width="361dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:srcCompat="@drawable/halfroundbarbot" />
+            app:srcCompat="@drawable/half_rounded_bar_bottom" />
 
         <TextView
             android:id="@+id/points"
@@ -164,7 +164,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:srcCompat="@drawable/halfroundbar"
+        app:srcCompat="@drawable/half_rounded_bar_top"
         android:contentDescription="@string/assignment" />
 
     <TextView
@@ -190,7 +190,7 @@
         app:layout_constraintEnd_toEndOf="@+id/chart"
         app:layout_constraintStart_toStartOf="@+id/chart"
         app:layout_constraintTop_toTopOf="@+id/chart"
-        app:srcCompat="@drawable/centercircle" />
+        app:srcCompat="@drawable/piechart_center_circle" />
 
     <TextView
         android:id="@+id/textView3"
@@ -228,7 +228,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginBottom="48dp"
-        android:drawableStart="@drawable/legendcircle"
+        android:drawableStart="@drawable/piechart_legend_circle"
         android:drawableTint="#648BFF"
         android:text=" On-Time"
         android:textColor="#000000"
@@ -240,7 +240,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        android:drawableStart="@drawable/legendcircle"
+        android:drawableStart="@drawable/piechart_legend_circle"
         android:drawableTint="#FFDD66"
         android:text="Late"
         android:textColor="#000000"
@@ -255,7 +255,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="48dp"
-        android:drawableStart="@drawable/legendcircle"
+        android:drawableStart="@drawable/piechart_legend_circle"
         android:drawableTint="#A1A1A1"
         android:text="Upcoming"
         android:textColor="#000000"
@@ -268,7 +268,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="48dp"
-        android:drawableStart="@drawable/legendcircle"
+        android:drawableStart="@drawable/piechart_legend_circle"
         android:drawableTint="#FF7664"
         android:text="Overdue"
         android:textColor="#000000"
@@ -329,7 +329,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/classroom" />
+        app:srcCompat="@drawable/google_classroom" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -341,7 +341,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/slack" />
+        app:srcCompat="@drawable/slack_logo" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -352,7 +352,7 @@
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logowhite" />
+        app:srcCompat="@drawable/_21_logo_white" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -364,7 +364,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/bell" />
+        app:srcCompat="@drawable/bell_icon" />
 
     <TextView
         android:id="@+id/textView13"
@@ -384,7 +384,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:drawableTop="@drawable/reward"
+        android:drawableTop="@drawable/reward_icon"
         android:text="Reward"
         android:textColor="#6D6D6D"
         android:textSize="11dp"
