@@ -121,13 +121,13 @@
         android:layout_height="300dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="55dp"
         android:background="#FFF"
+        android:outlineAmbientShadowColor="#000000"
+        app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cardCornerRadius="25dp"
-        android:outlineAmbientShadowColor="#000000">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView6"
@@ -144,38 +144,37 @@
             android:layout_width="75dp"
             android:layout_height="25dp"
             android:layout_gravity="right|top"
+            android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="13dp"
             android:background="@drawable/rounded_corners"
             android:backgroundTint="#EAEAEA"
             android:gravity="left|center"
-            android:text="Term 1"
-            />
+            android:text="Term 1" />
 
-<!--        <Button-->
-<!--            android:id="@+id/button2"-->
-<!--            android:layout_width="75dp"-->
-<!--            android:layout_height="25dp"-->
-<!--            android:layout_gravity="right|top"-->
-<!--            android:layout_marginRight="20dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:layout_marginTop="13dp"-->
-<!--            android:background="@drawable/rounded_corners"-->
-<!--            android:backgroundTint="#EAEAEA"-->
-<!--            android:gravity="left|center"-->
-<!--            >-->
+        <!--        <Button-->
+        <!--            android:id="@+id/button2"-->
+        <!--            android:layout_width="75dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:layout_gravity="right|top"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:layout_marginTop="13dp"-->
+        <!--            android:background="@drawable/rounded_corners"-->
+        <!--            android:backgroundTint="#EAEAEA"-->
+        <!--            android:gravity="left|center"-->
+        <!--            >-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/selectorbutton"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:fontFamily="monospace"-->
-<!--                android:paddingLeft="15dp"-->
-<!--                android:text="Term 1 ▾"-->
-<!--                android:textSize="12dp"-->
-<!--                />-->
-<!--        </Button>-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/selectorbutton"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:fontFamily="monospace"-->
+        <!--                android:paddingLeft="15dp"-->
+        <!--                android:text="Term 1 ▾"-->
+        <!--                android:textSize="12dp"-->
+        <!--                />-->
+        <!--        </Button>-->
 
         <TextView
             android:layout_width="wrap_content"

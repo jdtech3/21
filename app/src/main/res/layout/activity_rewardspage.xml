@@ -119,6 +119,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="653dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -141,25 +142,23 @@
     <ScrollView
         android:layout_width="363dp"
         android:layout_height="600dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.85"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="550dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/imageView14"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                android:layout_marginTop="10dp"
-               >
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/imageView17"
@@ -187,8 +186,7 @@
                 android:id="@+id/imageView15"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                android:layout_marginTop="10dp"
-                >
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/imageView18"
@@ -196,6 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/bestbuy_gc" />
+
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="135dp"
@@ -216,8 +215,7 @@
                 android:id="@+id/imageView13"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                android:layout_marginTop="10dp"
-                >
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/imageView19"
@@ -225,6 +223,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/starbucks_gc" />
+
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="135dp"
@@ -244,8 +243,7 @@
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                android:layout_marginTop="10dp"
-                >
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/imageView20"
@@ -253,6 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/steam_gc" />
+
                 <Button
                     android:id="@+id/button8"
                     android:layout_width="135dp"
