@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/assignment_icon"
-        android:text="@string/quest"
+        android:text="@string/quests"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,11 +103,11 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="50dp"
+        android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/reward_icon"
-        android:text="@string/reward"
+        android:text="@string/rewards"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -153,10 +153,6 @@
             android:text="Term 1"
             />
 
-
-=======
-            app:srcCompat="@drawable/half_rounded_bar_top" />
-
 <!--        <Button-->
 <!--            android:id="@+id/button2"-->
 <!--            android:layout_width="75dp"-->
@@ -184,12 +180,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:fontFamily="monospace"
             android:text="Assignments on time:"
             android:textColor="#000000"
-            android:textSize="15dp"
+            android:textSize="15sp"
             app:layout_constraintVertical_bias="0.562" />
 
         <com.github.mikephil.charting.charts.BarChart
@@ -206,7 +202,7 @@
         android:id="@+id/mark"
         android:layout_width="371dp"
         android:layout_height="300dp"
-        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
         android:layout_marginTop="12dp"
         android:background="#FFF"
@@ -228,12 +224,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:fontFamily="monospace"
             android:text="Average Missed Assignments:"
             android:textColor="#000000"
-            android:textSize="15dp"
+            android:textSize="15sp"
             app:layout_constraintVertical_bias="0.562" />
 
         <com.github.mikephil.charting.charts.LineChart
