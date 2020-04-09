@@ -199,7 +199,7 @@
         app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondMark" >
+        app:layout_constraintTop_toBottomOf="@+id/secondMark">
 
         <ImageView
             android:id="@+id/imageView21"
@@ -210,6 +210,7 @@
             app:layout_constraintStart_toStartOf="@+id/secondMark"
             app:layout_constraintTop_toTopOf="@+id/secondMark"
             app:srcCompat="@drawable/half_rounded_bar_top" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -225,7 +226,7 @@
             android:id="@+id/chart2"
             android:layout_width="371dp"
             android:layout_height="218dp"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="50dp" />
 
     </androidx.cardview.widget.CardView>
 
