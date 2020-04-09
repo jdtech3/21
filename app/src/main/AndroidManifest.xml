@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <activity
-            android:name=".homepage">
+            android:name=".loginpage">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +21,9 @@
 
         </activity>
 
-        <activity
-            android:name=".statuspage"
-            android:exported="true"/>
+<!--        <activity-->
+<!--            android:name=".statuspage"-->
+<!--            android:exported="true"/>-->
 
     </application>
 </manifest>
