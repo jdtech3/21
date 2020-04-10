@@ -107,9 +107,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="653dp"
+        android:layout_width="371dp"
+        android:layout_height="633dp"
         android:layout_marginTop="55dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +132,7 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="351dp"
+        android:layout_width="341dp"
         android:layout_height="583dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -268,15 +269,5 @@
         android:src="@drawable/cog_wheel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:layout_width="351dp"
-        android:layout_height="11dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:srcCompat="@drawable/smaller_rounded_bar_bottom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
