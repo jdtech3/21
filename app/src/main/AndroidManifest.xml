@@ -21,9 +21,21 @@
 
         </activity>
 
-<!--        <activity-->
-<!--            android:name=".statuspage"-->
-<!--            android:exported="true"/>-->
+        <activity
+            android:name=".homepage"
+            android:exported="true" />
+
+        <activity
+            android:name=".questspage"
+            android:exported="true" />
+
+        <activity
+            android:name=".rewardspage"
+            android:exported="true" />
+
+        <activity
+            android:name=".statuspage"
+            android:exported="true" />
 
     </application>
 </manifest>
