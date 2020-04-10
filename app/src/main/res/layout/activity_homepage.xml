@@ -72,7 +72,7 @@
         android:id="@+id/imageView4"
         android:layout_width="371dp"
         android:layout_height="130dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="9dp"
         android:outlineAmbientShadowColor="#000000"
         app:cardCornerRadius="25dp"
         app:layout_constraintBottom_toTopOf="@+id/button9"
