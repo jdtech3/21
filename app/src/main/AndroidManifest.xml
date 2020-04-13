@@ -25,9 +25,9 @@
             android:name=".homepage"
             android:exported="true" />
 
-        <activity
-            android:name=".questspage"
-            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".questspage"-->
+<!--            android:exported="true" />-->
 
         <activity
             android:name=".rewardspage"

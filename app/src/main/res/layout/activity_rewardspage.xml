@@ -149,7 +149,7 @@
                 android:id="@+id/imageView14"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="FFF"
+                app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
@@ -180,7 +180,7 @@
                 android:id="@+id/imageView15"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="FFF"
+                app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
@@ -211,7 +211,7 @@
                 android:id="@+id/imageView13"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="FFF"
+                app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
@@ -241,7 +241,7 @@
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="FFF"
+                app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
