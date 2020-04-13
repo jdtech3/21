@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <activity
-            android:name=".loginpage">
+            android:name=".questspage">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

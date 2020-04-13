@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -97,85 +98,95 @@
 
     <!-- END Overdue/Upcoming Selector -->
 
+    <!-- Assignments card recycler -->
 
-    <!-- Assignment CardView -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/assignmentCard"
-        android:layout_width="371dp"
-        android:layout_height="130dp"
-        android:layout_marginBottom="20dp"
-        android:outlineAmbientShadowColor="#000000"
-        app:cardCornerRadius="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/assignmentRecycler"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_marginTop="182dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/container" />
 
-        <!-- Subject tag -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="95dp"
-            android:layout_height="30dp"
-            android:layout_gravity="end"
-            android:layout_margin="15dp"
-            android:backgroundTint="#648BFF"
-            app:cardCornerRadius="15dp">
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="ICE CREAM"
-                android:textColor="#FFFFFF" />
-        </androidx.cardview.widget.CardView>
+<!--    &lt;!&ndash; Assignment CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/assignmentCard"-->
+<!--        android:layout_width="371dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:outlineAmbientShadowColor="#000000"-->
+<!--        app:cardCornerRadius="25dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/imageView3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="310dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:text="Next Assignment"
-            android:textColor="#000000"
-            android:textSize="14sp" />
+<!--        &lt;!&ndash; Subject tag &ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="95dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_margin="15dp"-->
+<!--            android:backgroundTint="#648BFF"-->
+<!--            app:cardCornerRadius="15dp">-->
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="310dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Cinemagraph"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/assignmentSubject"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="ICE CREAM"-->
+<!--                android:textColor="#FFFFFF" />-->
+<!--        </androidx.cardview.widget.CardView>-->
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="361dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:srcCompat="@drawable/half_rounded_bar_bottom" />
+<!--        <TextView-->
+<!--            android:id="@+id/assignmentDueDate"-->
+<!--            android:layout_width="310dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Next Assignment"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp" />-->
 
-        <TextView
-            android:id="@+id/points"
-            android:layout_width="100dp"
-            android:layout_height="26dp"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="20dp"
-            android:text="100 points"
-            android:textColor="#000000"
-            android:textSize="12sp" />
+<!--        <TextView-->
+<!--            android:id="@+id/assignmentName"-->
+<!--            android:layout_width="310dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Cinemagraph"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="20sp" />-->
 
-        <TextView
-            android:id="@+id/moreDetail"
-            android:layout_width="309dp"
-            android:layout_height="26dp"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="300dp"
-            android:text="Detail    →"
-            android:textColor="#000000"
-            android:textSize="12sp" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView8"-->
+<!--            android:layout_width="361dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            app:srcCompat="@drawable/half_rounded_bar_bottom" />-->
 
-    </androidx.cardview.widget.CardView>
+<!--        <TextView-->
+<!--            android:id="@+id/assignmentPoints"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:text="100 points"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="12sp" />-->
 
-    <!-- END Assignment CardView -->
+<!--        <TextView-->
+<!--            android:id="@+id/moreDetail"-->
+<!--            android:layout_width="309dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginStart="300dp"-->
+<!--            android:text="Detail    →"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="12sp" />-->
+
+<!--    </androidx.cardview.widget.CardView>-->
 
     <!-- Footer -->
 
