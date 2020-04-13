@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <!-- Assignment CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/assignmentCard"
+        android:layout_width="371dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="20dp"
+        android:outlineAmbientShadowColor="#000000"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Subject tag -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:backgroundTint="#648BFF"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:id="@+id/assignmentSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ICE CREAM"
+                android:textColor="#FFFFFF" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/assignmentDueDate"
+            android:layout_width="310dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text="Next Assignment"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/assignmentName"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cinemagraph"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/half_rounded_bar_bottom" />
+
+        <TextView
+            android:id="@+id/assignmentPoints"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp"
+            android:text="100 points"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/moreDetail"
+            android:layout_width="309dp"
+            android:layout_height="26dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="300dp"
+            android:text="Detail    →"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

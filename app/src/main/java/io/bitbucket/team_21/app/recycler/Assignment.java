@@ -2,7 +2,7 @@ package io.bitbucket.team_21.app.recycler;
 
 import java.util.ArrayList;
 
-class Assignment {
+public class Assignment {
     int daysLeft;
     String name;
     int points;
