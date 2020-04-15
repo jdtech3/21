@@ -92,7 +92,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/rewardsButton"
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/secondMark"
+        android:id="@+id/mark1"
         android:layout_width="371dp"
         android:layout_height="300dp"
         android:layout_alignParentStart="true"
@@ -121,7 +121,7 @@
         app:cardBackgroundColor="#FFF">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/onTimeAssignmentsHalfBarTop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/assignment"
@@ -131,7 +131,7 @@
             app:srcCompat="@drawable/half_rounded_bar_top" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/termSelectorButton"
             android:layout_width="75dp"
             android:layout_height="25dp"
             android:layout_gravity="right|top"
@@ -171,7 +171,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/mark"
+        android:id="@+id/mark2"
         android:layout_width="371dp"
         android:layout_height="300dp"
         android:layout_alignParentStart="false"
@@ -184,12 +184,12 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondMark"
+        app:layout_constraintTop_toBottomOf="@+id/mark1"
         app:cardBackgroundColor="#FFF"
         >
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/lateAssignmentsHalfBarTop"
             android:layout_width="371dp"
             android:layout_height="51dp"
             android:contentDescription="@string/assignment"
