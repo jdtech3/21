@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/bottom_bar" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/questButton"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -37,12 +37,12 @@
         android:textSize="12sp"
         style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/statusButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/statusButton"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -53,11 +53,11 @@
         style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/rewardsButton"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/homeButton"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -67,7 +67,7 @@
         android:textSize="12sp"
         style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/questButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/rewardsButton"
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -106,7 +106,7 @@
         style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <androidx.cardview.widget.CardView
