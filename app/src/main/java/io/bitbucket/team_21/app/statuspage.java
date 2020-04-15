@@ -88,11 +88,15 @@ public class statuspage extends AppCompatActivity{
 
         //data sets
         BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"Classes");
+
         LineDataSet lineDataSet = new LineDataSet(lineValues1(),"DataSet 1");
+
+
 
         //connecting the dots
         BarData barData = new BarData();
         barData.addDataSet(barDataSet1);
+
         LineData lineData = new LineData();
         lineData.addDataSet(lineDataSet);
 
@@ -200,12 +204,23 @@ public class statuspage extends AppCompatActivity{
     //adding values to the bar chart
     private ArrayList<BarEntry> dataValues1(){
         ArrayList<BarEntry> dataVals = new ArrayList<>();
-        dataVals.add(new BarEntry(0,86));
-        dataVals.add(new BarEntry(1,74));
-        dataVals.add(new BarEntry(2,78));
-        dataVals.add(new BarEntry(3,62));
-        dataVals.add(new BarEntry(4,73));
-        dataVals.add(new BarEntry(5,85));
+        dataVals.add(new BarEntry(0,15));
+        dataVals.add(new BarEntry(1,12));
+        dataVals.add(new BarEntry(2,5));
+        dataVals.add(new BarEntry(3,16));
+        dataVals.add(new BarEntry(4,9));
+        dataVals.add(new BarEntry(5,15));
+        return dataVals;
+    }
+
+    private ArrayList<BarEntry> dataValues2(){
+        ArrayList<BarEntry> dataVals = new ArrayList<>();
+        dataVals.add(new BarEntry(0,1));
+        dataVals.add(new BarEntry(1,4));
+        dataVals.add(new BarEntry(2,5));
+        dataVals.add(new BarEntry(3,2));
+        dataVals.add(new BarEntry(4,0));
+        dataVals.add(new BarEntry(5,7));
         return dataVals;
     }
 
