@@ -1,5 +1,6 @@
 package io.bitbucket.team_21.app;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -7,12 +8,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.ValueFormatter;
+import com.github.mikephil.charting.interfaces.dataprovider.LineDataProvider;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 
 import java.lang.reflect.Array;
@@ -21,8 +27,34 @@ import java.util.ArrayList;
 
 public class statuspage extends AppCompatActivity{
 
+    //creating the color light blue
+    int lightblue = Color.parseColor("#648BFF");
+
+    //creating the x values
+    final String[] classes = new String[]{"ENG","MATH","SCI","SS","ICT","GOA"};
+    //formatting values
+    ValueFormatter formatter = new ValueFormatter() {
+        @Override
+        public String getAxisLabel(float value, AxisBase axis){
+            return classes[(int) value];
+        }
+    };
+
+    //creating the x values
+    final String[] months = new String[]{"","","","","","",""};
+    //formatting values
+    ValueFormatter formatter1 = new ValueFormatter() {
+        @Override
+        public String getAxisLabel(float value, AxisBase axis){
+            return months[(int) value];
+        }
+    };
+
+
+    //defining variables
     BarChart barChart;
     LineChart lineChart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         // Get decorView so we can make changes to it
@@ -45,24 +77,106 @@ public class statuspage extends AppCompatActivity{
                 }
             });
 
+        //sets the page this is interacting with
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statuspage);
 
+
+        //finding the charts
         lineChart = findViewById(R.id.chart2);
         barChart = findViewById(R.id.chart1);
 
-        BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"DataSet 1");
+        //data sets
+        BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"Classes");
         LineDataSet lineDataSet = new LineDataSet(lineValues1(),"DataSet 1");
 
+        //connecting the dots
         BarData barData = new BarData();
         barData.addDataSet(barDataSet1);
         LineData lineData = new LineData();
         lineData.addDataSet(lineDataSet);
 
+        //refreshing the chart so the values are correct
         barChart.setData(barData);
         barChart.invalidate();
         lineChart.setData(lineData);
         lineChart.invalidate();
+
+        //customizing values in the X Axis
+        XAxis xAxis = barChart.getXAxis();
+        xAxis.setLabelRotationAngle(0);
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setTextSize(11);
+        xAxis.setTextColor(Color.DKGRAY);
+        xAxis.setDrawGridLines(false);
+        //setting the x axis values
+        xAxis.setValueFormatter(formatter);
+        //changes the minimum distance between values to 1
+        xAxis.setGranularity(1f);
+
+        //customizing values in the X Axis
+        XAxis lineX = lineChart.getXAxis();
+        lineX.setLabelRotationAngle(0);
+        lineX.setPosition(XAxis.XAxisPosition.BOTTOM);
+        lineX.setTextSize(11);
+        lineX.setTextColor(Color.DKGRAY);
+        lineX.setDrawGridLines(false);
+        //setting the x axis values
+        lineX.setValueFormatter(formatter1);
+        //changes the minimum distance between values to 1
+        lineX.setGranularity(1f);
+
+        //customizing gridlines for barchart
+        YAxis leftAxis = barChart.getAxisLeft();
+        leftAxis.setDrawGridLines(false);
+        leftAxis.setDrawZeroLine(true);
+        leftAxis.setDrawLabels(true);
+        barChart.getAxisRight().setEnabled(false);
+        leftAxis.setTextSize(11f);
+
+        //customizing gridlines for linechart
+        YAxis lineLeft = lineChart.getAxisLeft();
+        lineLeft.setDrawGridLines(false);
+        lineLeft.setDrawZeroLine(true);
+        lineLeft.setDrawLabels(true);
+        lineChart.getAxisRight().setEnabled(false);
+        lineLeft.setTextSize(11f);
+        lineLeft.setAxisMinimum(0f);
+
+
+        //makes it so that the values will not extend the chart area
+        barChart.setFitBars(true);
+        //sets width of bar values
+        barData.setBarWidth(0.5f);
+        //sets text size on top of bars
+        barDataSet1.setValueTextSize(11f);
+        //removing the description text at the bottom right of the charts
+        barChart.getDescription().setEnabled(false);
+        //makes it so the bars won't light up when you tap on them
+        barDataSet1.setHighlightEnabled(false);
+        //disables zooming
+        barChart.setScaleEnabled(false);
+        barDataSet1.setColor(lightblue);
+
+
+        //copy of above code, but for linechart
+        //removing the description text at the bottom right of the charts
+        lineChart.setFitsSystemWindows(true);
+        lineChart.getDescription().setEnabled(false);
+        //makes it so the bars won't light up when you tap on them
+        lineDataSet.setHighlightEnabled(false);
+        //disables zooming
+        lineChart.setScaleEnabled(false);
+        //sets color
+        lineDataSet.setColor(lightblue);
+        //sets text size above the chart
+        lineDataSet.setValueTextSize(0f);
+        lineDataSet.setDrawFilled(true);
+        lineDataSet.setCircleColor(Color.BLACK);
+
+
+
+
 
     }
 
@@ -83,21 +197,27 @@ public class statuspage extends AppCompatActivity{
         decorView.setSystemUiVisibility(uiOptions);
     }
 
+    //adding values to the bar chart
     private ArrayList<BarEntry> dataValues1(){
         ArrayList<BarEntry> dataVals = new ArrayList<>();
-        dataVals.add(new BarEntry(0,3));
-        dataVals.add(new BarEntry(1,4));
-        dataVals.add(new BarEntry(2,6));
-        dataVals.add(new BarEntry(3,10));
+        dataVals.add(new BarEntry(0,86));
+        dataVals.add(new BarEntry(1,74));
+        dataVals.add(new BarEntry(2,78));
+        dataVals.add(new BarEntry(3,62));
+        dataVals.add(new BarEntry(4,73));
+        dataVals.add(new BarEntry(5,85));
         return dataVals;
     }
 
+    //adding values to the linechart
     private ArrayList<Entry> lineValues1(){
         ArrayList<Entry> lineVals = new ArrayList<>();
-        lineVals.add(new Entry(0,3));
-        lineVals.add(new Entry(1,4));
-        lineVals.add(new Entry(2,6));
-        lineVals.add(new Entry(3,10));
+        lineVals.add(new BarEntry(0,0));
+        lineVals.add(new BarEntry(1,10));
+        lineVals.add(new BarEntry(2,8));
+        lineVals.add(new BarEntry(3,5));
+        lineVals.add(new BarEntry(4,3));
+        lineVals.add(new BarEntry(5,0));
         return lineVals;
     }
 }

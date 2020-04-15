@@ -117,7 +117,8 @@
         app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="#FFF">
 
         <ImageView
             android:id="@+id/imageView6"
@@ -134,37 +135,19 @@
             android:layout_width="75dp"
             android:layout_height="25dp"
             android:layout_gravity="right|top"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_corners"
             android:backgroundTint="#EAEAEA"
+            android:paddingStart="7dp"
             android:gravity="left|center"
-            android:text="Term 1" />
+            android:fontFamily="monospace"
+            android:textAllCaps="false"
+            android:text="Term 1 ▾"
+            android:textSize="13sp"
+            android:textColor="#000000"/>
 
-        <!--        <Button-->
-        <!--            android:id="@+id/button2"-->
-        <!--            android:layout_width="75dp"-->
-        <!--            android:layout_height="25dp"-->
-        <!--            android:layout_gravity="right|top"-->
-        <!--            android:layout_marginRight="20dp"-->
-        <!--            android:layout_marginBottom="10dp"-->
-        <!--            android:layout_marginTop="13dp"-->
-        <!--            android:background="@drawable/rounded_corners"-->
-        <!--            android:backgroundTint="#EAEAEA"-->
-        <!--            android:gravity="left|center"-->
-        <!--            >-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/selectorbutton"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:fontFamily="monospace"-->
-        <!--                android:paddingLeft="15dp"-->
-        <!--                android:text="Term 1 ▾"-->
-        <!--                android:textSize="12dp"-->
-        <!--                />-->
-        <!--        </Button>-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -201,7 +184,9 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondMark">
+        app:layout_constraintTop_toBottomOf="@+id/secondMark"
+        app:cardBackgroundColor="#FFF"
+        >
 
         <ImageView
             android:id="@+id/imageView21"
@@ -219,10 +204,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:fontFamily="monospace"
-            android:text="Average Missed Assignments:"
+            android:text="Late Assignments:"
             android:textColor="#000000"
             android:textSize="15sp"
-            app:layout_constraintVertical_bias="0.562" />
+            app:layout_constraintVertical_bias="0.562"
+            />
 
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/chart2"
