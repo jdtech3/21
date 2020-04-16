@@ -70,6 +70,4 @@ public class questspage extends AppCompatActivity {
 
         decorView.setSystemUiVisibility(uiOptions);
     }
-
-
 }
