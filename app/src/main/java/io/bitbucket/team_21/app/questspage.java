@@ -1,6 +1,7 @@
 package io.bitbucket.team_21.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -71,5 +72,21 @@ public class questspage extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-
+    // Nav buttons
+    public void goToHomepage(View view) {
+        Intent intent = new Intent(this, homepage.class);
+        startActivity(intent);
+    }
+    public void goToQuestspage(View view) {
+        Intent intent = new Intent(this, questspage.class);
+        startActivity(intent);
+    }
+    public void goToRewardspage(View view) {
+        Intent intent = new Intent(this, rewardspage.class);
+        startActivity(intent);
+    }
+    public void goToStatuspage(View view) {
+        Intent intent = new Intent(this, statuspage.class);
+        startActivity(intent);
+    }
 }
