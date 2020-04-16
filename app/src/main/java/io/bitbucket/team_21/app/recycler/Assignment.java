@@ -19,9 +19,9 @@ public class Assignment {
     public static ArrayList<Assignment> createDummyAssignments() {
         ArrayList<Assignment> assignments = new ArrayList<>();
         assignments.add(new Assignment(2, "assignment 1", 100, "IT"));
-        assignments.add(new Assignment(5, "assignment 2", 500, "IT"));
-        assignments.add(new Assignment(7, "assignment 3", 300, "IT"));
-        assignments.add(new Assignment(9, "assignment 4", 200, "IT"));
+        assignments.add(new Assignment(5, "assignment 2", 500, "English"));
+        assignments.add(new Assignment(7, "assignment 3", 300, "GoA"));
+        assignments.add(new Assignment(9, "assignment 4", 200, "ICE CREAM"));
 
         return assignments;
     }

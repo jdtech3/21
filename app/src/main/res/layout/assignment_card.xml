@@ -15,7 +15,9 @@
         android:layout_width="371dp"
         android:layout_height="130dp"
         android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
         android:outlineAmbientShadowColor="#000000"
+        app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="25dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +61,7 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="361dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             app:srcCompat="@drawable/half_rounded_bar_bottom" />
