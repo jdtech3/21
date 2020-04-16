@@ -123,14 +123,15 @@
 
     <Button
         android:id="@+id/questButton"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/assignment_icon"
+        android:onClick="goToQuestspage"
         android:text="@string/quests"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
-        style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/statusButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,6 +139,7 @@
 
     <Button
         android:id="@+id/statusButton"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -146,7 +148,6 @@
         android:text="@string/status"
         android:textColor="#6D6D6D"
         android:textSize="12sp"
-        style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/rewardsButton"
