@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <activity
-            android:name=".questspage">
+            android:name=".loginpage">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,9 +25,9 @@
             android:name=".homepage"
             android:exported="true" />
 
-<!--        <activity-->
-<!--            android:name=".questspage"-->
-<!--            android:exported="true" />-->
+        <activity
+            android:name=".questspage"
+            android:exported="true" />
 
         <activity
             android:name=".rewardspage"

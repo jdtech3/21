@@ -1,5 +1,6 @@
 package io.bitbucket.team_21.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -53,4 +54,9 @@ public class loginpage extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
+    // Nav buttons
+    public void goToHomepage(View view) {
+        Intent intent = new Intent(this, homepage.class);
+        startActivity(intent);
+    }
 }
