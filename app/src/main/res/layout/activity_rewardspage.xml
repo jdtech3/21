@@ -8,7 +8,7 @@
     android:background="#1C9DFF">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/cutOrangeBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,12 +18,12 @@
         app:srcCompat="@drawable/angled_orange" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/menuHalfBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="372dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/cutOrangeBar"
         app:srcCompat="@drawable/bottom_bar" />
 
     <Button
@@ -39,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/statusButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/menuHalfBar" />
 
     <Button
         android:id="@+id/statusButton"
@@ -54,7 +54,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/rewardsButton"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/menuHalfBar" />
 
     <Button
         android:id="@+id/homeButton"
@@ -69,10 +69,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/questButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/menuHalfBar" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/logo_21"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="14dp"
@@ -82,7 +82,7 @@
         app:srcCompat="@drawable/_21_logo_white" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/rewardsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -105,42 +105,46 @@
         android:textSize="12sp"
         style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/menuHalfBar"
         app:layout_constraintStart_toEndOf="@+id/homeButton"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/menuHalfBar" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rewardsBackgroundImage"
         android:layout_width="371dp"
         android:layout_height="633dp"
         android:layout_marginTop="55dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/menuHalfBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1"
-        app:srcCompat="@drawable/giftcard_selection" />
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="20dp"/>
+
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/pointsValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1700 Points"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/menuHalfBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="0.880"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.098"
+        android:textColor="#000000"/>
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollableRewards"
         android:layout_width="341dp"
         android:layout_height="583dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/rewardsBackgroundImage"
+        app:layout_constraintEnd_toEndOf="@+id/rewardsBackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/rewardsBackgroundImage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85">
 
@@ -150,21 +154,21 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/imageView14"
+                android:id="@+id/amazonCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView17"
+                    android:id="@+id/amazonImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/amazon_gc" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/amazonSelectOne"
                     android:layout_width="135dp"
                     android:layout_height="27dp"
                     android:layout_gravity="right|bottom"
@@ -181,21 +185,21 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/imageView15"
+                android:id="@+id/bestbuyCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView18"
+                    android:id="@+id/bestbuyImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/bestbuy_gc" />
 
                 <Button
-                    android:id="@+id/homeButton"
+                    android:id="@+id/bestbuySelectOne"
                     android:layout_width="135dp"
                     android:layout_height="27dp"
                     android:layout_gravity="right|bottom"
@@ -212,21 +216,21 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/imageView13"
+                android:id="@+id/starbucksCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView19"
+                    android:id="@+id/starbucksImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/starbucks_gc" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/starbucksSelectOne"
                     android:layout_width="135dp"
                     android:layout_height="27dp"
                     android:layout_gravity="right|bottom"
@@ -242,21 +246,21 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/imageView16"
+                android:id="@+id/steamCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 app:cardBackgroundColor="#FFF"
                 android:layout_marginTop="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView20"
+                    android:id="@+id/steamImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/steam_gc" />
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/steamSelectOne"
                     android:layout_width="135dp"
                     android:layout_height="27dp"
                     android:layout_gravity="right|bottom"
