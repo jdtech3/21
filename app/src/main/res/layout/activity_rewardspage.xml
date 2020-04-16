@@ -122,7 +122,15 @@
         app:layout_constraintVertical_bias="1"
         app:cardElevation="0dp"
         app:cardBackgroundColor="@color/cardview_light_background"
-        app:cardCornerRadius="20dp"/>
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/rewardsHalfBar"
+            android:layout_width="371dp"
+            android:layout_height="51dp"
+            android:src="@drawable/half_rounded_bar_top"/>
+
+    </androidx.cardview.widget.CardView>
 
 
     <TextView
@@ -140,25 +148,27 @@
 
     <ScrollView
         android:id="@+id/scrollableRewards"
-        android:layout_width="341dp"
-        android:layout_height="583dp"
+        android:layout_width="326dp"
+        android:layout_height="580dp"
+        app:layout_constraintVertical_bias="0.999"
+
         app:layout_constraintBottom_toBottomOf="@+id/rewardsBackgroundImage"
         app:layout_constraintEnd_toEndOf="@+id/rewardsBackgroundImage"
         app:layout_constraintStart_toStartOf="@+id/rewardsBackgroundImage"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85">
+        app:layout_constraintTop_toBottomOf="@+id/rewardsText">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="550dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/amazonCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="#FFF"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFF">
 
                 <ImageView
                     android:id="@+id/amazonImage"
@@ -169,27 +179,30 @@
 
                 <Button
                     android:id="@+id/amazonSelectOne"
-                    android:layout_width="135dp"
+                    android:layout_width="120dp"
                     android:layout_height="27dp"
                     android:layout_gravity="right|bottom"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/rounded_corners"
                     android:backgroundTint="#EAEAEA"
-                    android:gravity="left|center"
-                    android:paddingStart="15dp"
+                    android:fontFamily="monospace"
+                    android:gravity="start|center"
+                    android:paddingStart="25dp"
                     android:text="Select One"
+                    android:textAllCaps="false"
                     android:textColor="#000000"
                     android:textSize="12sp"
                     tools:text="Select One" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/bestbuyCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="#FFF"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFF">
 
                 <ImageView
                     android:id="@+id/bestbuyImage"
@@ -210,17 +223,18 @@
                     android:gravity="left|center"
                     android:paddingStart="15dp"
                     android:text="Select One"
-                    android:textSize="12sp"
                     android:textColor="#000000"
+                    android:textSize="12sp"
                     tools:ignore="DuplicateIds" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/starbucksCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="#FFF"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFF">
 
                 <ImageView
                     android:id="@+id/starbucksImage"
@@ -249,8 +263,8 @@
                 android:id="@+id/steamCardView"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:cardBackgroundColor="#FFF"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFF">
 
                 <ImageView
                     android:id="@+id/steamImage"
