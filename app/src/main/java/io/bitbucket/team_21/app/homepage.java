@@ -1,34 +1,59 @@
 package io.bitbucket.team_21.app;
 
-import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.View;
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import android.graphics.Color;
 
 
 import java.util.ArrayList;
 import java.util.List;
-
+import android.widget.Button;
 import lecho.lib.hellocharts.model.PieChartData;
 import lecho.lib.hellocharts.model.SliceValue;
 import lecho.lib.hellocharts.view.PieChartView;
 
 public class homepage extends AppCompatActivity {
-
+    private Button homeButoon;
+    private Button questButoon;
+    private Button rewardsButoon;
+    private Button statusButoon;
     PieChartView pieChartView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Get decorView so we can make changes to it
         final View decorView = getWindow().getDecorView();
-
+        homeButoon = (Button) findViewById(R.id.homeButton);
+        homeButoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHome();
+            }
+        });
+        questButoon = (Button) findViewById(R.id.questButton);
+        questButoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openQuest();
+            }
+        });
+        rewardsButoon = (Button) findViewById(R.id.rewardsButton);
+        rewardsButoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRewards();
+            }
+        });
+        statusButoon = (Button) findViewById(R.id.statusButton);
+        statusButoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openStatus();
+            }
+        });
         // Override the SystemUiVisibilityChange event listener
         decorView.setOnSystemUiVisibilityChangeListener(
             new View.OnSystemUiVisibilityChangeListener() {
@@ -62,6 +87,23 @@ public class homepage extends AppCompatActivity {
         pieChartView.setPieChartData(pieChartData);
     }
 
+    public  void openHome() {
+        Intent home;
+        home = new Intent(this, homepage.class);
+        startActivity(home);
+    }
+    public  void openQuest() {
+        Intent quest = new Intent(this, questspage.class);
+        startActivity(quest);
+    }
+    public  void openRewards() {
+        Intent rewards = new Intent(this, rewardspage.class);
+        startActivity(rewards);
+    }
+    public  void openStatus() {
+        Intent status = new Intent(this, statuspage.class);
+        startActivity(status);
+    }
     @Override
     protected void onResume() {
         super.onResume();

@@ -58,10 +58,10 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
         Assignment assignment = assignments.get(position);
 
         // Set views
-        holder.subjectTextView.setText(assignment.getSubject());
-        holder.dueDateTextView.setText(assignment.getDaysLeft());
-        holder.nameTextView.setText(assignment.getName());
-        holder.pointsTextView.setText(assignment.getPoints());
+        holder.subjectTextView.setText(String.valueOf(assignment.getSubject()));
+        holder.dueDateTextView.setText(String.valueOf("D-" + assignment.getDaysLeft()));
+        holder.nameTextView.setText(String.valueOf(assignment.getName()));
+        holder.pointsTextView.setText(String.valueOf(assignment.getPoints()));
     }
 
     @Override
