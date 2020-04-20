@@ -117,39 +117,64 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/rewardsBackgroundImage"
         android:layout_width="371dp"
-        android:layout_height="633dp"
+        android:layout_height="649dp"
         android:layout_marginTop="55dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="0dp"
         app:layout_constraintBottom_toTopOf="@+id/menuHalfBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1"
-        app:cardElevation="0dp"
-        app:cardBackgroundColor="@color/cardview_light_background"
-        app:cardCornerRadius="25dp">
+        app:layout_constraintVertical_bias="1">
 
         <ImageView
             android:id="@+id/rewardsHalfBar"
             android:layout_width="371dp"
             android:layout_height="51dp"
-            android:src="@drawable/half_rounded_bar_top"/>
+            android:src="@drawable/half_rounded_bar_top" >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/giftCardsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gift Cards"
+            android:textSize="14dp"
+            android:fontFamily="monospace"
+            android:layout_gravity="left"
+            android:textColor="#2F2F2F"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pointsValueBox"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#DEDEDE"
+            app:cardElevation="0dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            >
+
+          <TextView
+              android:id="@+id/pointsValue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="1700 Points"
+              android:fontFamily="monospace"
+              android:textSize="12sp"
+              android:layout_gravity="center"
+              android:textColor="#2F2F2F"/>
 
     </androidx.cardview.widget.CardView>
 
-
-    <TextView
-        android:id="@+id/pointsValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1700 Points"
-        app:layout_constraintBottom_toTopOf="@+id/menuHalfBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.880"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098"
-        android:textColor="#000000"/>
+    </androidx.cardview.widget.CardView>
 
     <ScrollView
         android:id="@+id/scrollableRewards"
