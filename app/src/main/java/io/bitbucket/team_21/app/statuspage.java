@@ -4,6 +4,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +30,7 @@ import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-public class statuspage extends AppCompatActivity{
+public class statuspage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     //creating the color light blue
     int lightblue = Color.parseColor("#648BFF");
@@ -82,6 +86,12 @@ public class statuspage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statuspage);
 
+        //spinner
+        Spinner spinner = findViewById(R.id.termSelectorButton);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.termselector, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
         //finding the charts
         lineChart = findViewById(R.id.chart2);
@@ -253,6 +263,17 @@ public class statuspage extends AppCompatActivity{
     public void goToStatuspage(View view) {
         Intent intent = new Intent(this, statuspage.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String text = parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
 

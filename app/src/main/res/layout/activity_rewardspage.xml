@@ -142,8 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gift Cards"
-            android:textSize="14dp"
-            android:fontFamily="monospace"
+            android:textSize="15dp"
             android:layout_gravity="left"
             android:textColor="#2F2F2F"
             android:layout_marginTop="15dp"
@@ -167,7 +166,6 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="1700 Points"
-              android:fontFamily="monospace"
               android:textSize="12sp"
               android:layout_gravity="center"
               android:textColor="#2F2F2F"/>
