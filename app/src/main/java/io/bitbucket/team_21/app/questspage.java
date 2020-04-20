@@ -2,8 +2,10 @@ package io.bitbucket.team_21.app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -70,6 +72,24 @@ public class questspage extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 
         decorView.setSystemUiVisibility(uiOptions);
+    }
+
+    // Overdue/Upcoming toggle
+    public void overdueClicked(View view) {
+        Button overdueBtnView = findViewById(R.id.overdueButton);
+        overdueBtnView.setBackgroundResource(R.drawable.half_rounded_corners_left);
+        overdueBtnView.setTextColor(Color.parseColor("#000000"));
+        Button upcomingBtnView = findViewById(R.id.upcomingButton);
+        upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right_transparent);
+        upcomingBtnView.setTextColor(Color.parseColor("#FFFFFF"));
+    }
+    public void upcomingClicked(View view) {
+        Button overdueBtnView = findViewById(R.id.overdueButton);
+        overdueBtnView.setBackgroundResource(R.drawable.half_rounded_corners_left_transparent);
+        overdueBtnView.setTextColor(Color.parseColor("#FFFFFF"));
+        Button upcomingBtnView = findViewById(R.id.upcomingButton);
+        upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right);
+        upcomingBtnView.setTextColor(Color.parseColor("#000000"));
     }
 
     // Nav buttons
