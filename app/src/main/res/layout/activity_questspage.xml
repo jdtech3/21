@@ -64,6 +64,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_corners"
+        android:searchIcon="@drawable/ic_menu_search_holo_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
