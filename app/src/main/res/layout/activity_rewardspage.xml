@@ -319,11 +319,11 @@
                     android:fontFamily="monospace"
                     android:gravity="start|center"
                     android:paddingStart="25dp"
-                    android:text="Enter Draw"
+                    android:text="Select One"
                     android:textAllCaps="false"
                     android:textColor="#000000"
                     android:textSize="12sp"
-                    tools:text="Enter Draw" />
+                    tools:text="Select One" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
@@ -337,5 +337,18 @@
         android:src="@drawable/cog_wheel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menuSelectorView"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        app:cardBackgroundColor="#1C9DFF"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="@+id/menuHalfBar"
+        app:layout_constraintTop_toTopOf="@+id/menuHalfBar"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="220.5dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

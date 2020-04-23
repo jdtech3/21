@@ -218,26 +218,16 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         return dataVals;
     }
 
-    private ArrayList<BarEntry> dataValues2(){
-        ArrayList<BarEntry> dataVals = new ArrayList<>();
-        dataVals.add(new BarEntry(0,1));
-        dataVals.add(new BarEntry(1,4));
-        dataVals.add(new BarEntry(2,5));
-        dataVals.add(new BarEntry(3,2));
-        dataVals.add(new BarEntry(4,0));
-        dataVals.add(new BarEntry(5,7));
-        return dataVals;
-    }
 
     //adding values to the linechart
     private ArrayList<Entry> lineValues1(){
         ArrayList<Entry> lineVals = new ArrayList<>();
-        lineVals.add(new BarEntry(0,0));
-        lineVals.add(new BarEntry(1,10));
-        lineVals.add(new BarEntry(2,8));
-        lineVals.add(new BarEntry(3,5));
-        lineVals.add(new BarEntry(4,3));
-        lineVals.add(new BarEntry(5,0));
+        lineVals.add(new BarEntry(1,0));
+        lineVals.add(new BarEntry(2,10));
+        lineVals.add(new BarEntry(3,8));
+        lineVals.add(new BarEntry(4,9));
+        lineVals.add(new BarEntry(5,3));
+        lineVals.add(new BarEntry(6,0));
         return lineVals;
     }
 
