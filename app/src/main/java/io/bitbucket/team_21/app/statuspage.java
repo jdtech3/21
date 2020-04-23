@@ -87,7 +87,7 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         setContentView(R.layout.activity_statuspage);
 
         //spinner
-        Spinner spinner = findViewById(R.id.termSelectorButton);
+        Spinner spinner = findViewById(R.id.termSelectorSpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.termselector, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -188,13 +188,7 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         lineDataSet.setValueTextSize(0f);
         lineDataSet.setDrawFilled(true);
         lineDataSet.setCircleColor(Color.BLACK);
-
-
-
-
-
     }
-
 
     @Override
     protected void onResume() {
