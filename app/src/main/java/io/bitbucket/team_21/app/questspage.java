@@ -17,12 +17,15 @@ import io.bitbucket.team_21.app.recycler.Assignment;
 import io.bitbucket.team_21.app.recycler.AssignmentsAdapter;
 
 public class questspage extends AppCompatActivity {
+    ArrayList assignments;
+    AssignmentsAdapter adapter;
+
     protected void initRecycler(Context context) {
         // Define
         RecyclerView assignmentRecycler = (RecyclerView) findViewById(R.id.assignmentRecycler);
         LinearLayoutManager assignmentRecyclerLLM = (LinearLayoutManager) new LinearLayoutManager(context);
-        ArrayList assignments = Assignment.createDummyAssignments();
-        AssignmentsAdapter adapter = new AssignmentsAdapter(assignments);
+        assignments = Assignment.createDummyAssignments("upcoming");
+        adapter = new AssignmentsAdapter(assignments);
 
         // Set things
         assignmentRecycler.setAdapter(adapter);
@@ -82,6 +85,11 @@ public class questspage extends AppCompatActivity {
         Button upcomingBtnView = findViewById(R.id.upcomingButton);
         upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right_transparent);
         upcomingBtnView.setTextColor(Color.parseColor("#FFFFFF"));
+
+        adapter.notifyItemRangeRemoved(0, assignments.size());
+        assignments.clear();
+        assignments.addAll(Assignment.createDummyAssignments("overdue"));
+        adapter.notifyItemRangeInserted(0, assignments.size());
     }
     public void upcomingClicked(View view) {
         Button overdueBtnView = findViewById(R.id.overdueButton);
@@ -90,6 +98,11 @@ public class questspage extends AppCompatActivity {
         Button upcomingBtnView = findViewById(R.id.upcomingButton);
         upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right);
         upcomingBtnView.setTextColor(Color.parseColor("#000000"));
+
+        adapter.notifyItemRangeRemoved(0, assignments.size());
+        assignments.clear();
+        assignments.addAll(Assignment.createDummyAssignments("upcoming"));
+        adapter.notifyItemRangeInserted(0, assignments.size());
     }
 
     // Nav buttons

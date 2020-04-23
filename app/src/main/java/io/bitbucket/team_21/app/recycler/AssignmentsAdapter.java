@@ -15,14 +15,14 @@ import io.bitbucket.team_21.app.R;
 
 public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.ViewHolder> {
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView subjectTextView;
-        public TextView dueDateTextView;
-        public TextView nameTextView;
-        public TextView pointsTextView;
+    class ViewHolder extends RecyclerView.ViewHolder {
+        TextView subjectTextView;
+        TextView dueDateTextView;
+        TextView nameTextView;
+        TextView pointsTextView;
 
         // Constructor
-        public ViewHolder(View itemView) {
+        ViewHolder(View itemView) {
             super(itemView);
 
             subjectTextView = (TextView) itemView.findViewById(R.id.assignmentSubject);
@@ -57,9 +57,18 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
         // Get data
         Assignment assignment = assignments.get(position);
 
+        // Preprocessing on the due date text
+        String dueDatePrefix;
+        if (assignment.getOverdue()) {
+            dueDatePrefix = "D+";
+        }
+        else {
+            dueDatePrefix = "D-";
+        }
+
         // Set views
         holder.subjectTextView.setText(String.valueOf(assignment.getSubject()));
-        holder.dueDateTextView.setText(String.valueOf("D-" + assignment.getDaysLeft()));
+        holder.dueDateTextView.setText(String.valueOf(dueDatePrefix + assignment.getDays()));
         holder.nameTextView.setText(String.valueOf(assignment.getName()));
         holder.pointsTextView.setText(String.valueOf(assignment.getPoints()));
     }
