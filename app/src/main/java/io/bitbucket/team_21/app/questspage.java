@@ -109,17 +109,21 @@ public class questspage extends AppCompatActivity {
     public void goToHomepage(View view) {
         Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     public void goToQuestspage(View view) {
         Intent intent = new Intent(this, questspage.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     public void goToRewardspage(View view) {
         Intent intent = new Intent(this, rewardspage.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     public void goToStatuspage(View view) {
         Intent intent = new Intent(this, statuspage.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }
