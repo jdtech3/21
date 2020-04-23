@@ -32,7 +32,7 @@
             android:name=".statuspage"
             android:exported="true" />
         <activity
-            android:name=".tranasstionpage"
+            android:name=".transactionpage"
             android:exported="true" />
     </application>
 
