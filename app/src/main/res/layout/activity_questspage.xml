@@ -188,6 +188,18 @@
         app:layout_constraintStart_toEndOf="@+id/homeButton"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-    <!-- END footer -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menuSelectorView"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        app:cardBackgroundColor="#1C9DFF"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="132.5dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

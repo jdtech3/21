@@ -399,4 +399,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menuSelectorView"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        app:cardBackgroundColor="#1C9DFF"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="@+id/menuHalfBar"
+        app:layout_constraintTop_toTopOf="@+id/menuHalfBar"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="43.5dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
