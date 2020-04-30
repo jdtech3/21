@@ -246,13 +246,12 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="120dp"
-            android:background="#EFEFEF"
-            android:entries="@array/points"
-            android:prompt="1" />
+            android:background="#0A69B3"
+            android:entries="@array/points" />
 
     </androidx.cardview.widget.CardView>
 
