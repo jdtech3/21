@@ -58,5 +58,6 @@ public class loginpage extends AppCompatActivity {
     public void goToHomepage(View view) {
         Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

@@ -1,12 +1,13 @@
 package io.bitbucket.team_21.app;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class transactionpage extends AppCompatActivity {
 
-public class rewardspage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Get decorView so we can make changes to it
@@ -30,7 +31,7 @@ public class rewardspage extends AppCompatActivity {
                 });
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rewardspage);
+        setContentView(R.layout.activity_transactionpage);
     }
 
     @Override
