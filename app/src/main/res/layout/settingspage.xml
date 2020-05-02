@@ -266,34 +266,47 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/alarmTime"
-        android:layout_width="371dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="311dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-25dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="#FFF"
+        app:cardBackgroundColor="#F4F4F4"
         app:cardCornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alarmSetting">
-
+        app:layout_constraintTop_toBottomOf="@+id/alarmSetting"
+        android:elevation="0dp"
+        >
         <TextView
-            android:id="@+id/alarmTimeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Set Alarm Time"
-            android:textSize="15sp"
+            android:text=":"
+            android:textSize="20sp"
+            android:layout_gravity="center"
             android:textColor="#000"
-            android:layout_gravity="left|top"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            />
-
-        <Spinner
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:layout_gravity="right|top"
-            android:layout_marginTop="5dp"
             android:layout_marginRight="30dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="311dp"
+            android:layout_height="25dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#F4F4F4"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="33.3dp"
+            android:layout_gravity="top"
+            app:cardBackgroundColor="#00F4F4F4"
+            app:cardElevation="15dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_gravity=""
+            android:layout_width="match_parent"
+            android:layout_height="33.3dp"
+            app:cardBackgroundColor="#00F4F4F4"
+            app:cardElevation="15dp"/>
+
+
+
     </androidx.cardview.widget.CardView>
 
 

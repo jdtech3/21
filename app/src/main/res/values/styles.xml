@@ -8,9 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="MySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
-        <item name="android:textColorPrimaryDisableOnly">#b71c1c</item>
-        <item name="android:colorControlActivated">#1b5e20</item>
-        <item name="android:colorForeground">#f57f17</item>
+        <item name="android:textColorPrimaryDisableOnly">#000000</item>
+        <item name="android:colorControlActivated">#648BFF</item>
+        <item name="android:colorForeground">#000000</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
     </style>
 
