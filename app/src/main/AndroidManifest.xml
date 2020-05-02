@@ -8,8 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".tranasstionpage"></activity>
+        android:theme="@style/AppTheme">
         <activity android:name=".loginpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +27,9 @@
             android:exported="true" />
         <activity
             android:name=".statuspage"
+            android:exported="true" />
+        <activity
+            android:name=".transactionpage"
             android:exported="true" />
     </application>
 
