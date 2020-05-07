@@ -94,11 +94,10 @@
         android:id="@+id/nextAssignment"
         android:layout_width="371dp"
         android:layout_height="130dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp"
         android:outlineAmbientShadowColor="#000000"
         app:cardBackgroundColor="#FFF"
         app:cardCornerRadius="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/googleClassroomButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/assignmentProgressBox">
@@ -367,27 +366,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/googleClassroomButton"
-        android:layout_width="371dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/green_rounded_corners"
-        android:drawableStart="@drawable/classroom"
-        android:elevation="2dp"
-        android:fontFamily="monospace"
-        android:paddingStart="15dp"
-        android:text="Google Classroom"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/menuHalfBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nextAssignment">
-
-    </Button>
 
     <ImageView
         android:id="@+id/settings"
