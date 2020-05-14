@@ -132,7 +132,7 @@
             android:layout_width="309dp"
             android:layout_height="26dp"
             android:layout_gravity="bottom"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:text="100 points"
             android:textColor="#000000"
             android:textSize="12sp" />
