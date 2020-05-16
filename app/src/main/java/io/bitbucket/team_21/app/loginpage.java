@@ -10,10 +10,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 public class loginpage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        ImageView b = (ImageView) findViewById(R.id.continue_with_google);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(loginpage.this, Pop.class));
+            }
+        });
         // Get decorView so we can make changes to it
         final View decorView = getWindow().getDecorView();
 

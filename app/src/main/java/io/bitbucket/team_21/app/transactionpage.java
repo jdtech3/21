@@ -41,11 +41,8 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
     @Override
     protected void onResume() {
         super.onResume();
-        Spinner points = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.points, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        points.setAdapter(adapter);
-        points.setOnItemSelectedListener(this);
         // Force the flags to be immersive mode, mwahahaha
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE

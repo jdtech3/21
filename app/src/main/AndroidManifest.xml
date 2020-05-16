@@ -31,6 +31,8 @@
         <activity
             android:name=".transactionpage"
             android:exported="true" />
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.PopUp"></activity>
     </application>
 
 </manifest>

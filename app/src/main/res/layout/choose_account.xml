@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4D000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="45dp"
+        app:cardBackgroundColor="#FFF"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose an account"
+            android:textColor="#292929"
+            android:textSize="18dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:textColor="#292929"
+            android:textSize="20dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="240dp"
+            app:cardBackgroundColor="#E8E8E8"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/rightArrowOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/right_arrow"
+                android:elevation="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="6dp"/>
+            <ImageView
+                android:id="@+id/rightArrowTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/right_arrow"
+                android:elevation="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="66dp"/>
+            <ImageView
+                android:id="@+id/rightArrowThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/right_arrow"
+                android:elevation="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="126dp"/>
+            <ImageView
+                android:id="@+id/rightArrowFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/right_arrow"
+                android:elevation="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="186dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/avatar_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bob Looney"
+                android:textColor="#1056BD"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blooney@gmail.com"
+                android:textColor="#292929"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="29dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/avatar_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bob Alooney"
+                android:textColor="#1056BD"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="72dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="balooney@gmail.com"
+                android:textColor="#292929"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="-7dp"
+                android:layout_marginTop="89dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/avatar_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bob Aloney"
+                android:textColor="#1056BD"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="132dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="baloney@gmail.com"
+                android:textColor="#292929"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="149dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/avatar_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bob Aloony"
+                android:textColor="#1056BD"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="192dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="baloony@gmail.com"
+                android:textColor="#292929"
+                android:textSize="13dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="-9dp"
+                android:layout_marginTop="209dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="#9C9C9C"
+                android:layout_marginTop="60dp"
+                app:cardElevation="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="#9C9C9C"
+                android:layout_marginTop="120dp"
+                app:cardElevation="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                app:cardBackgroundColor="#9C9C9C"
+                android:layout_marginTop="180dp"
+                app:cardElevation="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
