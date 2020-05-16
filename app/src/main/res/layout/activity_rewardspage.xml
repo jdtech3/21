@@ -165,7 +165,7 @@
               android:id="@+id/pointsValue"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="1700 Points"
+              android:text="1700"
               android:textSize="12sp"
               android:layout_gravity="center"
               android:textColor="#2F2F2F"/>
@@ -250,6 +250,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     app:srcCompat="@drawable/amazon_gc" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    android:onClick="toTransactionsPage"
+                    android:text="" />
 
             </androidx.cardview.widget.CardView>
 

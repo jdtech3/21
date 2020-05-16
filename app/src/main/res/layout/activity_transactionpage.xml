@@ -165,7 +165,7 @@
                 android:id="@+id/pointsValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1700 Points"
+                android:text="1700"
                 android:textSize="12sp"
                 android:layout_gravity="center"
                 android:textColor="#2F2F2F"/>
@@ -211,6 +211,7 @@
             android:backgroundTint="#0A69B3"
             android:fontFamily="monospace"
             android:gravity="center"
+            android:onClick="makePurchase"
             android:text="Buy"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"

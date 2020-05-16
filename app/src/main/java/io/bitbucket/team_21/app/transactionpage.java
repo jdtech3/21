@@ -8,15 +8,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class transactionpage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+    public static final String EXTRA_NUMBER = "com.example.application.example.EXTRA_NUMBER";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Get decorView so we can make changes to it
         final View decorView = getWindow().getDecorView();
-
         // Override the SystemUiVisibilityChange event listener
         decorView.setOnSystemUiVisibilityChangeListener(
                 new View.OnSystemUiVisibilityChangeListener() {
@@ -73,6 +73,15 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
     }
     public void goToStatuspage(View view) {
         Intent intent = new Intent(this, statuspage.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+    public void makePurchase(View view) {
+        TextView points = (TextView) findViewById(R.id.pointsValue);
+        int pts = Integer.parseInt((String) points.getText())-1000;
+        points.setText(Integer.toString(pts));
+        Intent intent = new Intent(this, rewardspage.class);
+        intent.putExtra(EXTRA_NUMBER, pts);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
