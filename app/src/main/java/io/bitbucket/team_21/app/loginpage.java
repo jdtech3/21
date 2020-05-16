@@ -14,8 +14,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class loginpage extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_loginpage);
 
         ImageView b = (ImageView) findViewById(R.id.continue_with_google);
         b.setOnClickListener(new View.OnClickListener() {
@@ -44,8 +47,6 @@ public class loginpage extends AppCompatActivity {
                 }
             });
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loginpage);
     }
 
     @Override
