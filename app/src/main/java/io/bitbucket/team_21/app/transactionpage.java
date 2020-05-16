@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class transactionpage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    public static final String EXTRA_NUMBER = "com.example.application.example.EXTRA_NUMBER";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Get decorView so we can make changes to it
@@ -36,6 +35,9 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transactionpage);
+        TextView points = (TextView) findViewById(R.id.pointsValue);
+        variables v = (variables) getApplication();
+        points.setText(Integer.toString(v.getData()));
     }
 
     @Override
@@ -77,11 +79,9 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
         overridePendingTransition(0, 0);
     }
     public void makePurchase(View view) {
-        TextView points = (TextView) findViewById(R.id.pointsValue);
-        int pts = Integer.parseInt((String) points.getText())-1000;
-        points.setText(Integer.toString(pts));
+        variables v = (variables) getApplication();
+        v.setData(v.getData()-1000);
         Intent intent = new Intent(this, rewardspage.class);
-        intent.putExtra(EXTRA_NUMBER, pts);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }

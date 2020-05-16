@@ -32,10 +32,9 @@ public class rewardspage extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rewardspage);
-        Intent intent = getIntent();
-        int pts = intent.getIntExtra(transactionpage.EXTRA_NUMBER, 0);
         TextView points = (TextView) findViewById(R.id.pointsValue);
-        points.setText(Integer.toString(pts));
+        variables v = (variables) getApplication();
+        points.setText(Integer.toString(v.getData()));
     }
 
     @Override
