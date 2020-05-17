@@ -400,7 +400,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/menuSelectorView"
+        android:id="@+id/homepageMenuSelectorView"
         android:layout_width="40dp"
         android:layout_height="5dp"
         app:cardBackgroundColor="#1C9DFF"
