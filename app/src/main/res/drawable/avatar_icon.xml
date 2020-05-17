@@ -3,9 +3,9 @@
 
     <item
         android:id="@+id/avatar"
-        android:drawable="@drawable/google_avatar_icon"
-        android:width="100dp"
-        android:height="100dp"
+        android:drawable="@drawable/blue_avatar"
+        android:width="40dp"
+        android:height="40dp"
          />
 
 </layer-list>

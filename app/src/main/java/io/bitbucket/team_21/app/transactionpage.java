@@ -8,15 +8,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class transactionpage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Get decorView so we can make changes to it
         final View decorView = getWindow().getDecorView();
-
         // Override the SystemUiVisibilityChange event listener
         decorView.setOnSystemUiVisibilityChangeListener(
                 new View.OnSystemUiVisibilityChangeListener() {
@@ -36,16 +35,16 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transactionpage);
+        TextView points = (TextView) findViewById(R.id.pointsValue);
+        variables v = (variables) getApplication();
+        points.setText(Integer.toString(v.getData()));
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Spinner points = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.points, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        points.setAdapter(adapter);
-        points.setOnItemSelectedListener(this);
         // Force the flags to be immersive mode, mwahahaha
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -76,6 +75,13 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
     }
     public void goToStatuspage(View view) {
         Intent intent = new Intent(this, statuspage.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+    public void makePurchase(View view) {
+        variables v = (variables) getApplication();
+        v.setData(v.getData()-1000);
+        Intent intent = new Intent(this, rewardspage.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
