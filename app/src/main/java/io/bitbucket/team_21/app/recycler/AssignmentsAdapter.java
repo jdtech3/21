@@ -4,6 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -71,6 +74,18 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
         holder.dueDateTextView.setText(String.valueOf(dueDatePrefix + assignment.getDays()));
         holder.nameTextView.setText(String.valueOf(assignment.getName()));
         holder.pointsTextView.setText(String.valueOf(assignment.getPoints()));
+
+        // Animations
+//        AlphaAnimation aAnim = new AlphaAnimation(0.0f, 1.0f);
+//        TranslateAnimation tAnim = new TranslateAnimation(0.0f, 0.0f, -20.0f, 0.0f);
+//        ScaleAnimation sAnim = new ScaleAnimation(1.00f, 1.00f,  1.05f,  1.00f,  0.50f,  0.50f);
+//        aAnim.setDuration(500);
+//        tAnim.setDuration(500);
+//        sAnim.setDuration(500);
+//        holder.itemView.startAnimation(aAnim);
+//        holder.itemView.startAnimation(tAnim);
+//        holder.itemView.startAnimation(sAnim);
+
     }
 
     @Override

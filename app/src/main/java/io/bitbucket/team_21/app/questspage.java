@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 import io.bitbucket.team_21.app.recycler.Assignment;
 import io.bitbucket.team_21.app.recycler.AssignmentsAdapter;
+import jp.wasabeef.recyclerview.animators.*;
 
 public class questspage extends AppCompatActivity {
     ArrayList assignments;
@@ -24,12 +25,17 @@ public class questspage extends AppCompatActivity {
         // Define
         RecyclerView assignmentRecycler = (RecyclerView) findViewById(R.id.assignmentRecycler);
         LinearLayoutManager assignmentRecyclerLLM = (LinearLayoutManager) new LinearLayoutManager(context);
-        assignments = Assignment.createDummyAssignments("upcoming");
+        assignments = new ArrayList<Assignment>();
         adapter = new AssignmentsAdapter(assignments);
 
         // Set things
         assignmentRecycler.setAdapter(adapter);
         assignmentRecycler.setLayoutManager(assignmentRecyclerLLM);
+
+        // Animations
+        assignmentRecycler.setItemAnimator(new LandingAnimator());
+        assignmentRecycler.getItemAnimator().setRemoveDuration(350);
+        assignmentRecycler.getItemAnimator().setAddDuration(350);
     }
 
     @Override
@@ -59,6 +65,10 @@ public class questspage extends AppCompatActivity {
 
         // Init RecyclerViews
         initRecycler(this);
+
+        // Populate RecyclerView
+        assignments.addAll(Assignment.createDummyAssignments("upcoming"));
+        adapter.notifyItemRangeInserted(0, assignments.size());
     }
 
     @Override

@@ -109,6 +109,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:scrollbars="vertical"
+        android:layoutAnimation="@anim/recycler_layout_anim"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="@+id/container"
         app:layout_constraintTop_toBottomOf="@+id/overdueButton" />
