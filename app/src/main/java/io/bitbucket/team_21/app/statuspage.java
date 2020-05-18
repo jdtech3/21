@@ -96,9 +96,9 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         barChart = findViewById(R.id.chart1);
 
         //data sets
-        BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"Classes");
+        BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"Assignments on Time");
 
-        LineDataSet lineDataSet = new LineDataSet(lineValues1(),"DataSet 1");
+        LineDataSet lineDataSet = new LineDataSet(lineValues1(),"Late Assignments");
 
 
 
