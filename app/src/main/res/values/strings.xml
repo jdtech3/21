@@ -12,7 +12,7 @@
     <string name="msg">drawLogo</string>
     <string name="assignment">Assignment</string>
     <string name="rewards">Reward</string>
-    <string name="quests">Quests</string>
+    <string name="quests">Task</string>
     <string name="status">Status</string>
     <string name="home">Home</string>
     <string-array name="termselector">

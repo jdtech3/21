@@ -195,6 +195,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
                 app:cardBackgroundColor="#FFF">
 
                 <androidx.cardview.widget.CardView
@@ -202,6 +203,8 @@
                     android:layout_height="50dp"
                     app:cardElevation="1dp"
                     app:cardBackgroundColor="#FFF"
+                    android:outlineAmbientShadowColor="#00ffffff"
+                    android:outlineSpotShadowColor="#00ffffff"
                     android:layout_marginTop="45dp"
                     android:layout_marginLeft="170dp">
                     <TextView
@@ -221,6 +224,8 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="0dp"
                     app:cardBackgroundColor="#FFF"
+                    android:outlineAmbientShadowColor="#00ffffff"
+                    android:outlineSpotShadowColor="#00ffffff"
                     app:cardElevation="1dp">
 
                     <TextView
@@ -230,6 +235,7 @@
                         android:layout_marginRight="11dp"
                         android:text="Amazon"
                         android:textColor="#000"
+                        android:background="#00ffffff"
                         android:textSize="16sp" />
                 </androidx.cardview.widget.CardView>
 
@@ -257,6 +263,7 @@
                     android:layout_height="match_parent"
                     android:background="#00ffffff"
                     android:onClick="toTransactionsPage"
+                    style="?android:attr/borderlessButtonStyle"
                     android:text="" />
 
             </androidx.cardview.widget.CardView>
@@ -266,6 +273,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
                 app:cardBackgroundColor="#FFF">
 
 
@@ -274,6 +282,8 @@
                     android:layout_height="50dp"
                     app:cardElevation="1dp"
                     app:cardBackgroundColor="#FFF"
+                    android:outlineAmbientShadowColor="#00ffffff"
+                    android:outlineSpotShadowColor="#00ffffff"
                     android:layout_marginTop="45dp"
                     android:layout_marginLeft="170dp">
                     <TextView
@@ -300,7 +310,9 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="0dp"
                     app:cardBackgroundColor="#FFF"
-                    app:cardElevation="1dp">
+                    android:outlineAmbientShadowColor="#00ffffff"
+                    android:outlineSpotShadowColor="#00ffffff"
+                    app:cardElevation="0dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -330,6 +342,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
                 app:cardBackgroundColor="#FFF">
 
                 <androidx.cardview.widget.CardView
@@ -337,6 +350,8 @@
                     android:layout_height="50dp"
                     app:cardElevation="1dp"
                     app:cardBackgroundColor="#FFF"
+                    android:outlineAmbientShadowColor="#00ffffff"
+                    android:outlineSpotShadowColor="#00ffffff"
                     android:layout_marginTop="45dp"
                     android:layout_marginLeft="170dp">
                     <TextView
@@ -366,6 +381,8 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="0dp"
                     app:cardBackgroundColor="#FFF"
+                    android:outlineAmbientShadowColor="#00ffffff"
+                    android:outlineSpotShadowColor="#00ffffff"
                     app:cardElevation="1dp">
 
                     <TextView
