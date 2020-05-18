@@ -33,6 +33,9 @@ pipelines:
           # Build apk
           - chmod a+x ./gradlew
           - ./gradlew assembleDebug
+          
+        artifacts:
+          - app/build/outputs/apk/debug/*.apk
 
 definitions:
     caches:
