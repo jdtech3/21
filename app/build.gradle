@@ -25,6 +25,8 @@ android {
 }
 repositories {
     maven { url 'https://jitpack.io' }
+    google()
+    jcenter()
 }
 
 dependencies {
@@ -41,4 +43,5 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.2.1'
     implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
 }
