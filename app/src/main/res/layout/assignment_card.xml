@@ -76,18 +76,6 @@
             android:textColor="#000000"
             android:textSize="12sp" />
 
-        <Button
-            style="?borderlessButtonStyle"
-            android:id="@+id/moreDetail"
-            android:layout_width="100dp"
-            android:layout_height="36dp"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="280dp"
-            android:text="Detail    →"
-            android:textColor="#000000"
-            android:textAllCaps="false"
-            android:backgroundTint="#00EAEAEA"
-            android:textSize="12sp" />
 
     </androidx.cardview.widget.CardView>
 
