@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.concurrent.TimeUnit;
 
 public class transactionpage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     @Override
@@ -80,10 +83,15 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
     }
     public void makePurchase(View view) {
         variables v = (variables) getApplication();
-        v.setData(v.getData()-1000);
-        Intent intent = new Intent(this, rewardspage.class);
-        startActivity(intent);
-        overridePendingTransition(0, 0);
+        if (v.getData() > 1000) {
+            v.setData(v.getData() - 1000);
+            Intent intent = new Intent(this, rewardspage.class);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
+        } else {
+            Button buyButton = (Button)findViewById(R.id.buyButton);
+            buyButton.setText("Insufficient Points");
+        }
     }
 
     @Override
