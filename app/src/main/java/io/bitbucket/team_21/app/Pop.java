@@ -1,12 +1,12 @@
 package io.bitbucket.team_21.app;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-class Pop extends Activity {
+public class Pop extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,6 @@ class Pop extends Activity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width*.8),(int)(height*.6));
+        getWindow().setLayout((int) (width * 0.75), (int) (height * 0.5));
     }
 }

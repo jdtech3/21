@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:background="@null"
-        android:onClick="goToHomepage"
+        android:onClick="goToPopup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

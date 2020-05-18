@@ -67,9 +67,8 @@ public class loginpage extends AppCompatActivity {
     }
 
     // Nav buttons
-    public void goToHomepage(View view) {
-        Intent intent = new Intent(this, homepage.class);
+    public void goToPopup(View view) {
+        Intent intent = new Intent(this, Pop.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
     }
 }
