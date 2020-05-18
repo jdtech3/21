@@ -80,17 +80,17 @@
                 android:text="Bob Looney"
                 android:textColor="#1056BD"
                 android:textSize="13dp"
-                android:layout_gravity="center|top"
-                android:layout_marginRight="35dp"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="12dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="blooney@gmail.com"
+                android:text="b.looney@gmail.com"
                 android:textColor="#292929"
                 android:textSize="13dp"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="29dp"/>
             <ImageView
                 android:layout_width="wrap_content"
@@ -101,20 +101,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bob Alooney"
+                android:text="Barack Obama"
                 android:textColor="#1056BD"
                 android:textSize="13dp"
-                android:layout_gravity="center|top"
-                android:layout_marginRight="33dp"
-                android:layout_marginTop="72dp"/>
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="72dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="balooney@gmail.com"
+                android:text="b.obama@gmail.com"
                 android:textColor="#292929"
                 android:textSize="13dp"
-                android:layout_gravity="center|top"
-                android:layout_marginLeft="-7dp"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="89dp"/>
             <ImageView
                 android:layout_width="wrap_content"
@@ -128,8 +128,8 @@
                 android:text="Use another account"
                 android:textColor="#333333"
                 android:textSize="15dp"
-                android:layout_gravity="center|top"
-                android:layout_marginRight="0dp"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="140dp"/>
 
 
