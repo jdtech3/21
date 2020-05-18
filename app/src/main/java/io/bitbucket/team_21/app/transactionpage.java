@@ -39,8 +39,10 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transactionpage);
         TextView points = (TextView) findViewById(R.id.pointsValue);
+        TextView entires = (TextView) findViewById(R.id.currentEntries);
         variables v = (variables) getApplication();
         points.setText(Integer.toString(v.getData()));
+        entires.setText(Integer.toString(v.getEntries())+" Current Entries");
     }
 
     @Override
@@ -85,12 +87,15 @@ public class transactionpage extends AppCompatActivity implements AdapterView.On
         variables v = (variables) getApplication();
         if (v.getData() > 1000) {
             v.setData(v.getData() - 1000);
-            Intent intent = new Intent(this, rewardspage.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
+            v.setEntries(v.getEntries()+1);
+            TextView points = (TextView) findViewById(R.id.pointsValue);
+            points.setText(Integer.toString(v.getData()));
+            TextView entires = (TextView) findViewById(R.id.currentEntries);
+            entires.setText(Integer.toString(v.getEntries())+" Current Entries");
         } else {
             Button buyButton = (Button)findViewById(R.id.buyButton);
             buyButton.setText("Insufficient Points");
+            buyButton.setTextSize(14);
         }
     }
 

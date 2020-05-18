@@ -89,7 +89,7 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         //spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.termselector, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
+        //cool
 
         //finding the charts
         lineChart = findViewById(R.id.chart2);
