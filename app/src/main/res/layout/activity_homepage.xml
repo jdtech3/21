@@ -116,7 +116,7 @@
             android:layout_width="310dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Cinemagraph"
+            android:text="Annotated Bibliography"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -133,7 +133,7 @@
             android:layout_height="26dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="30dp"
-            android:text="100 points"
+            android:text="500"
             android:textColor="#000000"
             android:textSize="12sp" />
 
@@ -143,7 +143,7 @@
             android:layout_height="30dp"
             android:layout_gravity="end"
             android:layout_margin="15dp"
-            android:backgroundTint="#FEC600"
+            android:backgroundTint="#648BFF"
             app:cardCornerRadius="15dp">
 
             <TextView
@@ -151,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="ICT 2019"
+                android:text="English 10"
                 android:textColor="#FFFFFF" />
         </androidx.cardview.widget.CardView>
 

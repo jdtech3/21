@@ -21,14 +21,14 @@ public class Assignment {
     public static ArrayList<Assignment> createDummyAssignments(String type) {
         ArrayList<Assignment> assignments = new ArrayList<>();
         if (type.equals("upcoming")) {
-            assignments.add(new Assignment(2, "assignment 1", 100, "IT", false));
-            assignments.add(new Assignment(5, "assignment 2", 500, "English", false));
-            assignments.add(new Assignment(7, "assignment 3", 300, "GoA", false));
-            assignments.add(new Assignment(9, "assignment 4", 200, "ICE CREAM", false));
+            assignments.add(new Assignment(2, "Annotated Bibliography", 500, "English 10", false));
+            assignments.add(new Assignment(5, "Week 8 Homework", 300, "Mandarin 11", false));
+            assignments.add(new Assignment(7, "Game of Apps - Pitch Presentation", 350, "GoA S3", false));
+            assignments.add(new Assignment(9, "Ch. 6 - Section 6.3", 200, "Pre-Cal. 11", false));
         }
         else if (type.equals("overdue")) {
-            assignments.add(new Assignment(3, "overdue assignment 1", 25, "IT", true));
-            assignments.add(new Assignment(4, "overdue assignment 2", 125, "English", true));
+            assignments.add(new Assignment(3, "Daily Physical Activity Log", 25, "PE 10", true));
+            assignments.add(new Assignment(4, "Spaceship Design - Pt. 1", 75, "Robotics 10", true));
         }
 
         return assignments;
