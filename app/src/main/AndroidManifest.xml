@@ -32,8 +32,9 @@
         <activity
             android:name=".transactionpage"
             android:exported="true" />
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.PopUp"/>
+        <activity
+            android:name=".loginpagePopup"
+            android:theme="@style/AppTheme.PopUp" />
     </application>
 
 </manifest>

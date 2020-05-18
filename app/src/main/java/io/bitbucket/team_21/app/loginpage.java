@@ -21,13 +21,6 @@ public class loginpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loginpage);
 
-        ImageView b = (ImageView) findViewById(R.id.continue_with_google);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(loginpage.this, Pop.class));
-            }
-        });
         // Get decorView so we can make changes to it
         final View decorView = getWindow().getDecorView();
 
@@ -68,7 +61,7 @@ public class loginpage extends AppCompatActivity {
 
     // Nav buttons
     public void goToPopup(View view) {
-        Intent intent = new Intent(this, Pop.class);
+        Intent intent = new Intent(this, loginpagePopup.class);
         startActivity(intent);
     }
 }
