@@ -72,32 +72,32 @@
     <!-- Overdue/Upcoming Selector -->
 
     <Button
-        android:id="@+id/overdueButton"
+        android:id="@+id/upcomingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="118dp"
         android:layout_marginTop="118dp"
         android:layout_marginEnd="204dp"
-        android:background="@drawable/half_rounded_corners_left_transparent"
-        android:onClick="overdueClicked"
-        android:text="Overdue"
+        android:background="@drawable/half_rounded_corners_left"
+        android:onClick="upcomingClicked"
+        android:text="Upcoming"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/upcomingButton"
+        android:id="@+id/overdueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/half_rounded_corners_right"
-        android:onClick="upcomingClicked"
-        android:text="Upcoming"
+        android:background="@drawable/half_rounded_corners_right_transparent"
+        android:onClick="overdueClicked"
+        android:text="Overdue"
         android:textAllCaps="false"
-        android:textColor="#000000"
-        app:layout_constraintStart_toEndOf="@+id/overdueButton"
-        app:layout_constraintTop_toTopOf="@+id/overdueButton" />
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/upcomingButton"
+        app:layout_constraintTop_toTopOf="@+id/upcomingButton" />
 
     <!-- END Overdue/Upcoming Selector -->
 

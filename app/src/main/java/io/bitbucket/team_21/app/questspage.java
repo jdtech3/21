@@ -80,10 +80,10 @@ public class questspage extends AppCompatActivity {
     // Overdue/Upcoming toggle
     public void overdueClicked(View view) {
         Button overdueBtnView = findViewById(R.id.overdueButton);
-        overdueBtnView.setBackgroundResource(R.drawable.half_rounded_corners_left);
+        overdueBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right);
         overdueBtnView.setTextColor(Color.parseColor("#000000"));
         Button upcomingBtnView = findViewById(R.id.upcomingButton);
-        upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right_transparent);
+        upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_left_transparent);
         upcomingBtnView.setTextColor(Color.parseColor("#FFFFFF"));
 
         adapter.notifyItemRangeRemoved(0, assignments.size());
@@ -93,10 +93,10 @@ public class questspage extends AppCompatActivity {
     }
     public void upcomingClicked(View view) {
         Button overdueBtnView = findViewById(R.id.overdueButton);
-        overdueBtnView.setBackgroundResource(R.drawable.half_rounded_corners_left_transparent);
+        overdueBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right_transparent);
         overdueBtnView.setTextColor(Color.parseColor("#FFFFFF"));
         Button upcomingBtnView = findViewById(R.id.upcomingButton);
-        upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_right);
+        upcomingBtnView.setBackgroundResource(R.drawable.half_rounded_corners_left);
         upcomingBtnView.setTextColor(Color.parseColor("#000000"));
 
         adapter.notifyItemRangeRemoved(0, assignments.size());
