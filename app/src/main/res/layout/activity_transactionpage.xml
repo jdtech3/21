@@ -209,7 +209,6 @@
             android:layout_marginTop="100dp"
             android:background="@drawable/rounded_corners"
             android:backgroundTint="#0A69B3"
-            android:fontFamily="monospace"
             android:gravity="center"
             android:onClick="makePurchase"
             android:text="Buy"

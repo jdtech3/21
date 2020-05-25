@@ -98,7 +98,7 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         //data sets
         BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"Assignments on Time");
 
-        LineDataSet lineDataSet = new LineDataSet(lineValues1(),"Late Assignments");
+        LineDataSet lineDataSet = new LineDataSet(lineValues1(),"Time Submitted Before Due Dates (Days)");
 
 
 
@@ -155,6 +155,7 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         lineChart.getAxisRight().setEnabled(false);
         lineLeft.setTextSize(11f);
         lineLeft.setAxisMinimum(0f);
+        lineLeft.setGranularity(1f);
 
 
         //makes it so that the values will not extend the chart area
@@ -183,7 +184,7 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
         //sets color
         lineDataSet.setColor(lightblue);
         //sets text size above the chart
-        lineDataSet.setValueTextSize(0f);
+        lineDataSet.setValueTextSize(1f);
         lineDataSet.setDrawFilled(true);
         lineDataSet.setCircleColor(Color.BLACK);
     }
@@ -221,11 +222,11 @@ public class statuspage extends AppCompatActivity implements AdapterView.OnItemS
     private ArrayList<Entry> lineValues1(){
         ArrayList<Entry> lineVals = new ArrayList<>();
         lineVals.add(new BarEntry(1,0));
-        lineVals.add(new BarEntry(2,10));
-        lineVals.add(new BarEntry(3,8));
-        lineVals.add(new BarEntry(4,9));
+        lineVals.add(new BarEntry(2,1));
+        lineVals.add(new BarEntry(3,1));
+        lineVals.add(new BarEntry(4,2));
         lineVals.add(new BarEntry(5,3));
-        lineVals.add(new BarEntry(6,0));
+        lineVals.add(new BarEntry(6,5));
         return lineVals;
     }
 
