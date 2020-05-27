@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 import io.bitbucket.team_21.app.R;
@@ -23,6 +25,7 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
         TextView dueDateTextView;
         TextView nameTextView;
         TextView pointsTextView;
+        TextView durationTextView;
 
         // Constructor
         ViewHolder(View itemView) {
@@ -32,6 +35,7 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
             dueDateTextView = (TextView) itemView.findViewById(R.id.assignmentDueDate);
             nameTextView = (TextView) itemView.findViewById(R.id.assignmentName);
             pointsTextView = (TextView) itemView.findViewById(R.id.assignmentPoints);
+            durationTextView = (TextView) itemView.findViewById(R.id.assignmentDuration);
         }
     }
 
@@ -74,6 +78,7 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
         holder.dueDateTextView.setText(String.valueOf(dueDatePrefix + assignment.getDays()));
         holder.nameTextView.setText(String.valueOf(assignment.getName()));
         holder.pointsTextView.setText(String.valueOf(assignment.getPoints()));
+        holder.durationTextView.setText(String.valueOf("~" + assignment.getDuration() + " minutes"));
 
         // Animations
 //        AlphaAnimation aAnim = new AlphaAnimation(0.0f, 1.0f);
@@ -85,7 +90,6 @@ public class AssignmentsAdapter extends RecyclerView.Adapter<AssignmentsAdapter.
 //        holder.itemView.startAnimation(aAnim);
 //        holder.itemView.startAnimation(tAnim);
 //        holder.itemView.startAnimation(sAnim);
-
     }
 
     @Override
