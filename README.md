@@ -11,4 +11,4 @@ Android Studio project for Team21's gamified procrastination management app. *Th
   
 ---  
   
-*Copyright © 2020 Team 21. | This project is licensed under the MIT license. For more information, please see [LICENSE](./LICENSE.md).*
+*Copyright © 2020 Team 21.*
